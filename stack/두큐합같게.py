@@ -4,7 +4,7 @@ def solution(queue1, queue2):
     answer = 0
     total = (sum(queue1) + sum(queue2))
 
-    if total % 2 != 0:
+    if total % 2 != 0: # 홀수면 실패
         return -1
 
     total //= 2
@@ -29,3 +29,6 @@ def solution(queue1, queue2):
         answer += 1
 
     return -1
+
+
+print(solution([3, 2, 7, 2], [4, 6, 5, 1]))
